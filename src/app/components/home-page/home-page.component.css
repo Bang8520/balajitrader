@@ -38,12 +38,10 @@ h1{
 
 .word {
   display: block;
-
+  transform: rotateX(120deg);
   animation: show 0.005s forwards, pop-word 1s forwards;
   animation-timing-function: cubic-bezier(0.14, 1.23, 0.33, 1.16);
   opacity: 0;
-
-  transform: rotateX(120deg);
   transform-origin: 50% 100%;
 }
 
