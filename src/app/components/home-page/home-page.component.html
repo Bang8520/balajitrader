@@ -1,0 +1,47 @@
+<div class="cname">
+  <h1>
+    <span class="word welcome">Welcome To</span>
+    <span class="word">Balaji Traders </span>
+    <span class="word subtext">Distributor of Numaligarh Refinery Limited (NRL) Government of India Enterprise, who fulfills your</span>
+    <span class="word subtitle">industrial chemicals and waxes requirements.</span>
+  </h1>
+</div>
+
+<h1 class="collection-title">Our Productes</h1>
+
+<ngb-carousel *ngIf="data" class="carousels">
+  <ng-template ngbSlide *ngFor="let edata of data">
+    <div class="">
+      <div class="cantainer-img">
+        <img
+          class="carousels-img"
+          src="{{ edata.img }}"
+          width=""
+          style="border-radius: 10px"
+        />
+      </div>
+    </div>
+    <div class="carousel-caption dec1">
+      <h3>{{ edata.name }}</h3>
+    </div>
+  </ng-template>
+</ngb-carousel>
+
+<div>
+  <div class="column">
+    <ng-container *ngFor="let edata of data; let i = index">
+      <ng-container *ngIf="i < 6">
+      <div class="subcoll">
+        <div>
+          <img
+            src="{{edata.img}}"
+            alt=""
+            class="col-img"
+          />
+        </div>
+        <div><h3>{{edata.name}}</h3></div>
+      </div>
+      </ng-container>
+    </ng-container>
+  </div>
+</div>

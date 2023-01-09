@@ -1,0 +1,55 @@
+.main {
+  margin: 0.5rem 10rem 1rem 10rem;
+  background-color: #eaeaea;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 1rem 0;
+}
+.about-us{
+  margin: 1rem;
+}
+.row{
+  margin: 1rem;
+  background-color: #fff;
+  border-radius: 2px;
+}
+.col{
+  margin: 1rem;
+}
+.subtext{
+  margin: 0 1rem;
+  background: rgb(178,178,178);
+background: linear-gradient(0deg, rgba(178,178,178,1) 0%, rgba(57,62,70,1) 100%);
+background-clip: text;
+}
+.company-name {
+  margin: 1rem 1rem 0 1rem;
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(8, 61, 108, 1) 100%
+  );
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  height: 4.4rem;
+  padding: inherit;
+  text-align: left;
+  font-size: 4rem;
+  word-wrap: break-word;
+}
+.aboutus {
+  margin: 1rem;
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(8, 61, 108, 1) 100%
+  );
+  padding-right: 25rem;
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-align: left;
+  word-wrap: break-word;
+}
