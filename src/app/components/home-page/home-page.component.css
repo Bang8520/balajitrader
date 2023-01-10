@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600");
 
-:root {
+/* :root {
   --bar-scale-y: 0;
   --sparkle-color: rgba(0, 0, 0, 0.4);
-}
+} */
 .cname{
   margin: 12rem auto auto 5rem;
 }
@@ -16,6 +16,7 @@
 @keyframes show {
   to {
     opacity: 1;
+    transform: rotateX(0);
   }
 }
 
@@ -39,7 +40,7 @@ h1{
 .word {
   display: block;
   transform: rotateX(120deg);
-  animation: show 0.005s forwards, pop-word 1s forwards;
+  animation: show 1s forwards;
   animation-timing-function: cubic-bezier(0.14, 1.23, 0.33, 1.16);
   opacity: 0;
   transform-origin: 50% 100%;
