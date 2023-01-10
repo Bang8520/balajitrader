@@ -37,3 +37,12 @@ a{
     font-size: larger;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .about{
+    font-size: medium;
+  }
+  .para{
+    line-height: initial;
+  }
+}
