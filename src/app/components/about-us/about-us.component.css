@@ -33,13 +33,12 @@ background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
-  height: 4.4rem;
   padding: inherit;
   text-align: left;
   font-size: 4rem;
   word-wrap: break-word;
 }
-.aboutus {
+.content {
   margin: 1rem;
   background: rgb(34, 193, 195);
   background: linear-gradient(
@@ -47,9 +46,47 @@ background-clip: text;
     rgba(34, 193, 195, 1) 0%,
     rgba(8, 61, 108, 1) 100%
   );
-  padding-right: 25rem;
+  padding-right: 15rem;
   background-clip: text;
   -webkit-background-clip: text;
   text-align: left;
   word-wrap: break-word;
+  text-align: justify;
+}
+
+@media screen and (max-width: 1500px) {
+  .content {
+    margin: 1rem;
+    background: rgb(34, 193, 195);
+    background: linear-gradient(
+      0deg,
+      rgba(34, 193, 195, 1) 0%,
+      rgba(8, 61, 108, 1) 100%
+    );
+    padding-right: 0;
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-align: left;
+    word-wrap: break-word;
+    text-align: justify;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .main {
+    margin: 0.5rem 2rem 1rem 2rem;
+    background-color: #eaeaea;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 1rem 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .company-name{
+    font-size: 2rem;
+  }
+  .subtext{
+    padding-right: 10rem;
+  }
 }

@@ -7,6 +7,8 @@ a{
   display: flex;
   justify-content: space-around;
   background-color: #EAEAEA;
+  line-height: 10px;
+  margin: auto auto 0 auto;
 }
 .add{
   display: flex;
@@ -14,4 +16,24 @@ a{
 }
 .add>div{
   margin: 0 30px;
+}
+
+.about{
+  font-size: larger;
+}
+
+@media screen and (max-width: 1000px) {
+  .footer{
+    font-size: 1rem;
+  }
+  .add{
+    margin: 10px;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+  }
+  .about{
+    font-size: larger;
+  }
 }

@@ -17,15 +17,11 @@ export class HomePageComponent implements OnInit {
 	@ViewChild('carousel', { static: true }) carousel!: NgbCarousel;
 
   constructor(config: NgbCarouselConfig) {
-		// customize default values of carousels used by this component tree
 		config.interval = 2000;
 		config.wrap = false;
 		config.keyboard = false;
 		config.pauseOnHover = true;
 	}
-
-
-  images = [944, 1011, 984].map((n) => `https://picsum.photos/id/${n}/900/500`);
    data=[
     {
       name: 'Carnuba',
@@ -100,11 +96,7 @@ export class HomePageComponent implements OnInit {
 
   ]
 
-   dataFormat:any=[];
-
    ngOnInit(): void {
-    this.carousel.cycle();
   }
-
 
 }

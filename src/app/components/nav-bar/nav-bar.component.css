@@ -10,4 +10,19 @@ a { color: inherit;
   width: 15rem;
   display: flex;
   justify-content: space-around;
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 500px) {
+  .nav_bar{
+    background-color: #EAEAEA;
+    padding: 8px 10px 0 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .last{
+    width: 10rem;
+    display: flex;
+    justify-content: space-around;
+  }
 }
