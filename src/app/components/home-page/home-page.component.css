@@ -4,9 +4,6 @@
   --bar-scale-y: 0;
   --sparkle-color: rgba(0, 0, 0, 0.4);
 } */
-.cname{
-  margin: 12rem auto auto 5rem;
-}
 @keyframes pop-word {
   to {
     transform: rotateX(0);
@@ -25,14 +22,51 @@
     transform: scaleY(1);
   }
 }
-h1{
-  color: #0A2647;
+
+@keyframes left {
+  to {
+    right: 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes nrl-logo {
+  to{
+    right: 40%;
+    opacity: 1;
+  }
+}
+
+@keyframes nrl-dec {
+  to{
+    right: 30%;
+    opacity: 1;
+  }
+}
+.col-7{
+  padding-top: 8rem;
+  padding-left: 5rem;
+  height: 681px;
+  background-color: #BFEAF5;
+}
+.col{
+  padding-top: 8rem;
+  padding-left: 5rem;
+  height: 681px;
+  background-color: #91D8E4;
+}
+h1 {
+  color: #0a2647;
   font-family: "Playfair Display", Vidaloka, serif;
-  font-size: 8rem;
+  font-size: 4rem;
   line-height: 0.85;
   perspective: 500px;
 }
-.welcome{
+.balaji-traders-logo {
+  float: left;
+  margin-left: 50px;
+}
+.welcome {
   font-size: 4rem;
 }
 
@@ -47,19 +81,61 @@ h1{
 
 .word:nth-of-type(2) {
   animation-delay: 1.1s;
-  font-size: 5rem;
+}
+.subtext {
+  font-size: 1.3rem;
+  margin-top: 80px;
+  animation-delay: 2.5s;
+  line-height: 1.5rem;
+}
+.nrl {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-wrap: wrap;
+  text-align: center;
 }
 
-.subtitle{
-  font-size: 1.5rem;
+
+.vertical-line {
+  border-left: 6px solid black;
+  height: 450px;
+  position: absolute;
+  right: 0%;
+  opacity: 0;
+  animation: left 1s forwards;
   animation-delay: 1.5s;
-  margin-top: 10px;
+}
+.nrl-logo {
+  margin-top: 190px;
+  width: 257px;
+  height: 74px;
+  right: 0%;
+  opacity: 0;
+  position: absolute;
+  animation: nrl-logo 1s forwards;
+  animation-delay: 2s;
+}
+.nrl-dec {
+  right: 0%;
+  position: absolute;
+  font-size: 1.3rem;
+  margin-top: 280px;
+  margin-left: 10px;
+  opacity: 0;
+  animation: nrl-dec 1s forwards;
+  animation-delay: 2s;
 }
 
 .collection-title {
-  margin-top: 20rem ;
-  background: rgb(34,193,195);
-  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(8,61,108,1) 100%);
+  margin-top: 20rem;
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(8, 61, 108, 1) 100%
+  );
   -webkit-text-fill-color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
@@ -67,24 +143,28 @@ h1{
   font-size: 6rem;
   word-wrap: break-word;
 }
-.carousels{
-  background: rgb(57,62,70);
-  background: linear-gradient(0deg, rgba(57,62,70,1) 0%, rgba(255,255,255,1) 100%);
+.carousels {
+  background: rgb(57, 62, 70);
+  background: linear-gradient(
+    0deg,
+    rgba(57, 62, 70, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
   padding: 50px;
 }
-.carousels-img{
+.carousels-img {
   height: 20rem;
   width: 25rem;
 }
 
-.cantainer-img{
+.cantainer-img {
   margin: 0 0 3rem 32vw;
   border-radius: 20px;
 }
-.dec1{
+.dec1 {
   top: 19rem;
 }
-.column{
+.column {
   display: flex;
   justify-content: space-around;
   align-content: center;
@@ -92,33 +172,28 @@ h1{
   margin-top: 4rem;
   flex-wrap: wrap;
 }
-.col-img{
+.col-img {
   height: 15rem;
   width: 20rem;
   border-radius: 10px;
   margin-bottom: 1rem;
 }
-.subcoll{
+.subcoll {
   width: 25rem;
   margin: 3rem;
 }
-.subtext{
-  font-size: 1.3rem;
-  margin-top: 10px;
-  animation-delay: 1.5s;
-}
+
 @media screen and (max-width: 1000px) {
-  .cantainer-img{
+  .cantainer-img {
     margin: 5rem auto auto 18vw;
     border-radius: 20px;
   }
 
-  .carousels-img{
+  .carousels-img {
     height: 20rem;
     width: 25rem;
   }
 }
-
 
 @media screen and (max-width: 700px) {
   h1 {
@@ -129,19 +204,18 @@ h1{
     font-size: 4rem;
   }
 
-  .cname{
+  .cname {
     padding: 2rem;
     margin: 3rem auto;
   }
 
-  .cantainer-img{
+  .cantainer-img {
     margin: 0 auto auto 10vw;
     border-radius: 20px;
   }
 
-  .carousels-img{
+  .carousels-img {
     height: 15rem;
     width: 20rem;
   }
 }
-
